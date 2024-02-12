@@ -1,0 +1,155 @@
+body {
+    background: #282828;
+    font-family: tahoma;
+    color: #fff;
+}
+
+.sidebar {
+    width: 200px;
+    transition: width 0.3s;
+    background-color: #5088f1;
+    position: fixed;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: auto;
+}
+
+/* siderbar links*/
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* active/ current links*/
+.sidebar a.active {
+    background-color: #04aa6d;
+    height: 70px;
+    color: white;
+    padding: 20px;
+}
+
+/* links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* sidebar wide when change size to be tiny */
+.sidebar.collapsed {
+    width: 50px;
+}
+
+/* distance between sidebar and content when sidebar to be tiny */
+.content.expanded {
+    margin-left: 70px;
+}
+
+#toggle-sidebar {
+    padding: 12px;
+    text-align: left;
+}
+
+.content {
+    margin-left: 210px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    transition: margin 0.3s;
+}
+
+.contact-size {
+    font-size: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+th {
+    background-color: rgb(19, 110, 170);
+    color: white;
+}
+
+tr:hover {
+    background-color: #6e6b6b;
+}
+
+.grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-left: 210px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto;
+    padding: 5px;
+    transition: grid-template-columns 0.3s;
+}
+
+.grid-container>div {
+    background-color: rgb(19, 110, 170);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 3px solid white;
+}
+
+.top-satu {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.top-dua {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.top-tiga {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
+.bottom-satu {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.bottom-dua {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.bottom-tiga {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.container-fluid {
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.container-fluid-second {
+    padding-left: 30px;
+}

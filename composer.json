@@ -1,0 +1,7 @@
+{
+    "name": "pcada/build_denso",
+    "type": "project",
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.18"
+    }
+}
